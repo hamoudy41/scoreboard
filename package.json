@@ -1,12 +1,13 @@
 {
   "name": "scoreboard",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://hamoudy41.github.io/scoreboard",
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "gh-pages": "^2.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "^3.4.0"
   },
   "scripts": {
@@ -14,19 +15,16 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
