@@ -4,7 +4,7 @@ import Header from './Header';
   
 import Player from './Player';
 import AddPlayerForm from './AddPlayerForm';
-import {HashRouter} from 'react-router-dom';
+
 
 class App extends Component {
   state = {
@@ -73,7 +73,7 @@ handleAddPlayer = (name) => {
   render() {
     const highScore = this.getHighScore();
     return (
-      <HashRouter basename= "/scoreboard">
+     
       <div className="scoreboard">
         <Header 
           players={this.state.players} 
@@ -97,7 +97,7 @@ handleAddPlayer = (name) => {
         addPlayer = {this.handleAddPlayer}
         />
       </div>
-      </HashRouter>
+  
     );
   }
 }
